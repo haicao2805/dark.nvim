@@ -24,13 +24,13 @@ function M.setup(colors)
 	vim.api.nvim_set_hl(0, "TelescopeResultsDiffAdd", { fg = colors.green })
 
 	-- -- NvimTree
-	vim.api.nvim_set_hl(0, "NvimTreeNormal", { fg = colors.fg, bg = colors.menu })
-	vim.api.nvim_set_hl(0, "NvimTreeVertSplit", { fg = colors.bg, bg = colors.bg })
+	vim.api.nvim_set_hl(0, "NvimTreeNormal", { fg = colors.fg, bg = colors.bg })
+	vim.api.nvim_set_hl(0, "NvimTreeVertSplit", { fg = colors.fg, bg = colors.fg })
 	vim.api.nvim_set_hl(0, "NvimTreeRootFolder", { fg = colors.fg, bold = true })
 	vim.api.nvim_set_hl(0, "NvimTreeGitDirty", { fg = colors.yellow })
 	vim.api.nvim_set_hl(0, "NvimTreeGitNew", { fg = colors.bright_green })
 	vim.api.nvim_set_hl(0, "NvimTreeImageFile", { fg = colors.pink })
-	vim.api.nvim_set_hl(0, "NvimTreeFolderIcon", { fg = colors.purple })
+	vim.api.nvim_set_hl(0, "NvimTreeFolderIcon", { fg = colors.yellow })
 	vim.api.nvim_set_hl(0, "NvimTreeIndentMarker", { fg = colors.nontext })
 	vim.api.nvim_set_hl(0, "NvimTreeEmptyFolderName", { fg = colors.comment })
 	vim.api.nvim_set_hl(0, "NvimTreeFolderName", { fg = colors.fg })
@@ -39,17 +39,6 @@ function M.setup(colors)
 	vim.api.nvim_set_hl(0, "NvimTreeCursorLine", { bg = colors.selection })
 	vim.api.nvim_set_hl(0, "NvimTreeIn", { bg = colors.selection })
 
-	vim.api.nvim_set_hl(0, "NvimTreeEndOfBuffer", { fg = colors.menu, bg = colors.menu })
-
-	-- -- NeoTree
-	-- NeoTreeNormal = { fg = colors.fg, bg = colors.menu },
-	-- NeoTreeNormalNC = { fg = colors.fg, bg = colors.menu },
-	-- NeoTreeDirectoryName = { fg = colors.fg },
-	-- NeoTreeGitUnstaged = { fg = colors.bright_magenta },
-	-- NeoTreeGitModified = { fg = colors.bright_magenta },
-	-- NeoTreeGitUntracked = { fg = colors.bright_green },
-	-- NeoTreeDirectoryIcon = { fg = colors.purple },
-	-- NeoTreeIndentMarker = { fg = colors.nontext },
-	-- NeoTreeDotfile = { fg = colors.comment },
+	vim.api.nvim_set_hl(0, "NvimTreeEndOfBuffer", { fg = colors.bg, bg = colors.bg })
 end
 return M

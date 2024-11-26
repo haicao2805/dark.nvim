@@ -1,34 +1,34 @@
 local M = {}
 
 function M.setup(colors)
-	vim.api.nvim_set_hl(0, "Normal", { fg = colors.fg, bg = colors.bg }) -- done
-	vim.api.nvim_set_hl(0, "NormalFloat", { fg = colors.fg, bg = colors.menu }) -- done
-	vim.api.nvim_set_hl(0, "Comment", { fg = colors.comment, italic = true }) -- done
-	vim.api.nvim_set_hl(0, "Constant", { fg = colors.fg }) -- done
-	vim.api.nvim_set_hl(0, "String", { fg = colors.green }) -- done
+	vim.api.nvim_set_hl(0, "Normal", { fg = colors.fg, bg = colors.bg })
+	vim.api.nvim_set_hl(0, "NormalFloat", { fg = colors.fg, bg = colors.menu })
+	vim.api.nvim_set_hl(0, "Comment", { fg = colors.comment, italic = true })
+	vim.api.nvim_set_hl(0, "Constant", { fg = colors.fg })
+	vim.api.nvim_set_hl(0, "String", { fg = colors.green })
 	vim.api.nvim_set_hl(0, "Character", { fg = colors.fg })
-	vim.api.nvim_set_hl(0, "Number", { fg = colors.blue }) -- done
-	vim.api.nvim_set_hl(0, "Boolean", { fg = colors.orange }) -- done
-	vim.api.nvim_set_hl(0, "Float", { fg = colors.orange }) -- done
+	vim.api.nvim_set_hl(0, "Number", { fg = colors.blue })
+	vim.api.nvim_set_hl(0, "Boolean", { fg = colors.orange })
+	vim.api.nvim_set_hl(0, "Float", { fg = colors.orange })
 	vim.api.nvim_set_hl(0, "FloatBorder", { fg = colors.white })
-	vim.api.nvim_set_hl(0, "Operator", { fg = colors.fg }) -- done
-	vim.api.nvim_set_hl(0, "Keyword", { fg = colors.orange }) -- done
-	vim.api.nvim_set_hl(0, "Keywords", { fg = colors.orange }) -- done
-	vim.api.nvim_set_hl(0, "Identifier", { fg = colors.orange }) -- done
-	vim.api.nvim_set_hl(0, "Function", { fg = colors.blue }) -- done
-	vim.api.nvim_set_hl(0, "Statement", { fg = colors.orange }) -- done
-	vim.api.nvim_set_hl(0, "Conditional", { fg = colors.orange }) -- done
-	vim.api.nvim_set_hl(0, "Repeat", { fg = colors.orange }) -- done
+	vim.api.nvim_set_hl(0, "Operator", { fg = colors.fg })
+	vim.api.nvim_set_hl(0, "Keyword", { fg = colors.orange })
+	vim.api.nvim_set_hl(0, "Keywords", { fg = colors.orange })
+	vim.api.nvim_set_hl(0, "Identifier", { fg = colors.orange })
+	vim.api.nvim_set_hl(0, "Function", { fg = colors.blue })
+	vim.api.nvim_set_hl(0, "Statement", { fg = colors.orange })
+	vim.api.nvim_set_hl(0, "Conditional", { fg = colors.orange })
+	vim.api.nvim_set_hl(0, "Repeat", { fg = colors.orange })
 	vim.api.nvim_set_hl(0, "Label", { fg = colors.cyan })
-	vim.api.nvim_set_hl(0, "Exception", { fg = colors.purple })
+	vim.api.nvim_set_hl(0, "Exception", { fg = colors.orange })
 	vim.api.nvim_set_hl(0, "PreProc", { fg = colors.yellow })
 	vim.api.nvim_set_hl(0, "Include", { fg = colors.orange })
 	vim.api.nvim_set_hl(0, "Define", { fg = colors.purple })
 	vim.api.nvim_set_hl(0, "Title", { fg = colors.cyan })
-	vim.api.nvim_set_hl(0, "Macro", { fg = colors.purple })
+	vim.api.nvim_set_hl(0, "Macro", { fg = colors.yellow })
 	vim.api.nvim_set_hl(0, "PreCondit", { fg = colors.cyan })
-	vim.api.nvim_set_hl(0, "Type", { fg = colors.fg }) -- done
-	vim.api.nvim_set_hl(0, "StorageClass", { fg = colors.orange }) -- done
+	vim.api.nvim_set_hl(0, "Type", { fg = colors.fg })
+	vim.api.nvim_set_hl(0, "StorageClass", { fg = colors.orange })
 	vim.api.nvim_set_hl(0, "Structure", { fg = colors.yellow })
 	vim.api.nvim_set_hl(0, "TypeDef", { fg = colors.yellow })
 	vim.api.nvim_set_hl(0, "Special", { fg = colors.green, italic = true })
@@ -40,19 +40,19 @@ function M.setup(colors)
 	vim.api.nvim_set_hl(0, "Cursor", { reverse = true })
 	vim.api.nvim_set_hl(0, "CursorLineNr", { fg = colors.fg, bold = true })
 
-	vim.api.nvim_set_hl(0, "SignColumn", { bg = colors.bg }) -- done
-	vim.api.nvim_set_hl(0, "LineNr", { fg = colors.comment }) -- done
-	vim.api.nvim_set_hl(0, "FoldColumn", {}) -- done
+	vim.api.nvim_set_hl(0, "SignColumn", { bg = colors.bg })
+	vim.api.nvim_set_hl(0, "LineNr", { fg = colors.comment })
+	vim.api.nvim_set_hl(0, "FoldColumn", {})
 
 	vim.api.nvim_set_hl(0, "Conceal", { fg = colors.comment })
 	vim.api.nvim_set_hl(0, "CursorColumn", { bg = colors.black })
 	vim.api.nvim_set_hl(0, "CursorLine", { bg = colors.selection })
 	vim.api.nvim_set_hl(0, "ColorColumn", { bg = colors.selection })
 
-	vim.api.nvim_set_hl(0, "StatusLine", { fg = colors.white, bg = colors.black }) -- done
-	vim.api.nvim_set_hl(0, "StatusLineNC", { fg = colors.comment }) -- done
-	vim.api.nvim_set_hl(0, "StatusLineTerm", { fg = colors.white, bg = colors.black }) -- donep
-	vim.api.nvim_set_hl(0, "StatusLineTermNC", { fg = colors.comment }) -- done
+	vim.api.nvim_set_hl(0, "StatusLine", { fg = colors.white, bg = colors.black })
+	vim.api.nvim_set_hl(0, "StatusLineNC", { fg = colors.comment })
+	vim.api.nvim_set_hl(0, "StatusLineTerm", { fg = colors.white, bg = colors.black })
+	vim.api.nvim_set_hl(0, "StatusLineTermNC", { fg = colors.comment })
 
 	vim.api.nvim_set_hl(0, "Directory", { fg = colors.cyan })
 	vim.api.nvim_set_hl(0, "DiffAdd", { fg = colors.bg, bg = colors.green })
@@ -61,8 +61,8 @@ function M.setup(colors)
 	vim.api.nvim_set_hl(0, "DiffText", { fg = colors.comment })
 
 	vim.api.nvim_set_hl(0, "ErrorMsg", { fg = colors.bright_red })
-	vim.api.nvim_set_hl(0, "VertSplit", { fg = colors.black })
-	vim.api.nvim_set_hl(0, "WinSeparator", { fg = colors.black })
+	vim.api.nvim_set_hl(0, "VertSplit", { fg = colors.comment })
+	vim.api.nvim_set_hl(0, "WinSeparator", { fg = colors.comment })
 	vim.api.nvim_set_hl(0, "Folded", { fg = colors.comment })
 	vim.api.nvim_set_hl(0, "Search", { fg = colors.black, bg = colors.orange })
 	vim.api.nvim_set_hl(0, "IncSearch", { fg = colors.orange, bg = colors.comment })
@@ -93,171 +93,171 @@ function M.setup(colors)
 
 	vim.api.nvim_set_hl(0, "EndOfBuffer", { fg = colors.bg, bg = colors.bg })
 
-	-- --  Diff
-	-- diffAdded = { fg = colors.green },
-	-- diffRemoved = { fg = colors.red },
-	-- diffFileId = { fg = colors.yellow, bold = true, reverse = true },
-	-- diffFile = { fg = colors.nontext },
-	-- diffNewFile = { fg = colors.green },
-	-- diffOldFile = { fg = colors.red },
-	--
+	--  Diff
+	vim.api.nvim_set_hl(0, "diffAdded", { fg = colors.green })
+	vim.api.nvim_set_hl(0, "diffRemoved", { fg = colors.red })
+	vim.api.nvim_set_hl(0, "diffFileId", { fg = colors.yellow, bold = true, reverse = true })
+	vim.api.nvim_set_hl(0, "diffFile", { fg = colors.nontext })
+	vim.api.nvim_set_hl(0, "diffNewFile", { fg = colors.green })
+	vim.api.nvim_set_hl(0, "diffOldFile", { fg = colors.red })
+
 	-- -- TreeSitter
-	-- ["@error"] = { fg = colors.bright_red },
-	-- ["@punctuation.delimiter"] = { fg = colors.fg },
-	-- ["@punctuation.bracket"] = { fg = colors.fg },
-	-- ["@constant"] = { fg = colors.purple },
-	-- ["@constant.builtin"] = { fg = colors.purple },
-	-- ["@constant.macro"] = { fg = colors.cyan },
-	-- ["@string.regexp"] = { fg = colors.red },
-	vim.api.nvim_set_hl(0, "@string", { link = "String" }) -- done
-	-- ["@string.escape"] = { fg = colors.cyan },
-	-- ["@string.special.symbol"] = { fg = colors.purple },
-	-- ["@character"] = { fg = colors.green },
-	vim.api.nvim_set_hl(0, "@number", { link = "Number" }) -- done
-	vim.api.nvim_set_hl(0, "@number.float", { link = "Number" }) -- done
-	vim.api.nvim_set_hl(0, "@boolean", { link = "Boolean" }) -- done
-	-- vim.api.nvim_set_hl(0, "@annotation", { fg = colors.yellow })
-	-- ["@attribute"] = { fg = colors.cyan },
-	-- ["@module"] = { fg = colors.orange },
+	vim.api.nvim_set_hl(0, "@error", { fg = colors.bright_red })
+	vim.api.nvim_set_hl(0, "@punctuation.delimiter", { fg = colors.fg })
+	vim.api.nvim_set_hl(0, "@punctuation.bracket", { fg = colors.fg })
+	vim.api.nvim_set_hl(0, "@constant", { link = "Constant" })
+	vim.api.nvim_set_hl(0, "@constant.builtin", { link = "Constant" })
+	vim.api.nvim_set_hl(0, "@constant.macro", { link = "Constant" })
+	vim.api.nvim_set_hl(0, "@string.regexp", { fg = colors.blue })
+	vim.api.nvim_set_hl(0, "@string", { link = "String" })
+	vim.api.nvim_set_hl(0, "@string.escape", { link = "String" })
+	vim.api.nvim_set_hl(0, "@string.special.symbol", { fg = colors.blue })
+	vim.api.nvim_set_hl(0, "@character", { fg = colors.fg })
+	vim.api.nvim_set_hl(0, "@number", { link = "Number" })
+	vim.api.nvim_set_hl(0, "@number.float", { link = "Number" })
+	vim.api.nvim_set_hl(0, "@boolean", { link = "Boolean" })
+	vim.api.nvim_set_hl(0, "@annotation", { fg = colors.yellow })
+	vim.api.nvim_set_hl(0, "@attribute", { fg = colors.orange })
+	vim.api.nvim_set_hl(0, "@module", { fg = colors.orange })
 
-	vim.api.nvim_set_hl(0, "@function.builtin", { link = "Function" }) -- done
-	vim.api.nvim_set_hl(0, "@function", { link = "Function" }) -- done
-	vim.api.nvim_set_hl(0, "@function.macro", { link = "Function" }) -- done
-	-- ["@variable.parameter"] = { fg = colors.orange },
-	-- ["@variable.parameter.reference"] = { fg = colors.orange },
-	-- ["@function.method"] = { fg = colors.green },
-	-- ["@variable.member"] = { fg = colors.orange },
-	vim.api.nvim_set_hl(0, "@property", { fg = colors.pink }) -- done
-	vim.api.nvim_set_hl(0, "@constructor", { fg = colors.orange }) -- done
+	vim.api.nvim_set_hl(0, "@function.builtin", { link = "Function" })
+	vim.api.nvim_set_hl(0, "@function", { link = "Function" })
+	vim.api.nvim_set_hl(0, "@function.macro", { link = "Macro" })
+	vim.api.nvim_set_hl(0, "@variable.parameter", { fg = colors.pink })
+	vim.api.nvim_set_hl(0, "@variable.parameter.reference", { fg = colors.pink })
+	vim.api.nvim_set_hl(0, "@variable.member", { fg = colors.pink })
+	vim.api.nvim_set_hl(0, "@function.method", { fg = colors.pink })
+	vim.api.nvim_set_hl(0, "@property", { fg = colors.pink })
+	vim.api.nvim_set_hl(0, "@constructor", { fg = colors.orange })
 
-	vim.api.nvim_set_hl(0, "@label", { link = "Label" }) -- done
+	vim.api.nvim_set_hl(0, "@label", { link = "Label" })
 
-	vim.api.nvim_set_hl(0, "@keyword", { link = "Keyword" }) -- done
-	vim.api.nvim_set_hl(0, "@keyword.conditional", { link = "Conditional" }) -- done
-	vim.api.nvim_set_hl(0, "@keyword.repeat", { link = "Repeat" }) -- done
-	vim.api.nvim_set_hl(0, "@keyword.function", { link = "Function" }) -- done
-	vim.api.nvim_set_hl(0, "@keyword.operator", { link = "Operator" }) -- done
-	vim.api.nvim_set_hl(0, "@keyword.exception", { link = "Exception" }) -- done
-	vim.api.nvim_set_hl(0, "@keyword.include", { link = "Include" }) -- done
-	vim.api.nvim_set_hl(0, "@operator", { link = "Operator" }) -- done
+	vim.api.nvim_set_hl(0, "@keyword", { link = "Keyword" })
+	vim.api.nvim_set_hl(0, "@keyword.conditional", { link = "Conditional" })
+	vim.api.nvim_set_hl(0, "@keyword.repeat", { link = "Repeat" })
+	vim.api.nvim_set_hl(0, "@keyword.function", { link = "Function" })
+	vim.api.nvim_set_hl(0, "@keyword.operator", { link = "Operator" })
+	vim.api.nvim_set_hl(0, "@keyword.exception", { link = "Exception" })
+	vim.api.nvim_set_hl(0, "@keyword.include", { link = "Include" })
+	vim.api.nvim_set_hl(0, "@operator", { link = "Operator" })
 
-	vim.api.nvim_set_hl(0, "@type", { link = "Type" }) -- done
-	vim.api.nvim_set_hl(0, "@type.builtin", { link = "Type", italic = true }) -- done
-	vim.api.nvim_set_hl(0, "@type.qualifier", { link = "Type" }) -- done
-	vim.api.nvim_set_hl(0, "@structure", { fg = colors.pink }) -- done
+	vim.api.nvim_set_hl(0, "@type", { link = "Type" })
+	vim.api.nvim_set_hl(0, "@type.builtin", { link = "Type", italic = true })
+	vim.api.nvim_set_hl(0, "@type.qualifier", { link = "Type" })
+	vim.api.nvim_set_hl(0, "@structure", { fg = colors.orange })
 
-	vim.api.nvim_set_hl(0, "@variable", { fg = colors.fg }) -- done
-	vim.api.nvim_set_hl(0, "@variable.builtin", { fg = colors.pink }) -- done
+	vim.api.nvim_set_hl(0, "@variable", { fg = colors.fg })
+	vim.api.nvim_set_hl(0, "@variable.builtin", { fg = colors.pink })
 
-	-- -- Semantic
-	-- ["@class"] = { fg = colors.cyan },
-	-- ["@struct"] = { fg = colors.cyan },
-	-- ["@enum"] = { fg = colors.cyan },
-	vim.api.nvim_set_hl(0, "@enumMember", { fg = colors.pink }) -- done
-	-- ["@event"] = { fg = colors.cyan },
-	-- ["@interface"] = { fg = colors.cyan },
-	-- ["@modifier"] = { fg = colors.cyan },
-	-- ["@regexp"] = { fg = colors.yellow },
-	-- ["@typeParameter"] = { fg = colors.cyan },
-	vim.api.nvim_set_hl(0, "@decorator", { fg = colors.yellow }) -- done
-	--
-	-- -- LSP Semantic (0.9+)
-	-- ["@lsp.type.class"] = { fg = colors.cyan },
-	-- ["@lsp.type.enum"] = { fg = colors.cyan },
-	vim.api.nvim_set_hl(0, "@lsp.type.decorator", { fg = colors.yellow }) -- done
-	vim.api.nvim_set_hl(0, "@lsp.type.enumMember", { fg = colors.pink }) -- done
-	-- ["@lsp.type.function"] = { fg = colors.green },
-	-- ["@lsp.type.interface"] = { fg = colors.cyan },
-	-- ["@lsp.type.macro"] = { fg = colors.cyan },
-	-- ["@lsp.type.method"] = { fg = colors.green },
-	-- ["@lsp.type.namespace"] = { fg = colors.orange },
-	-- ["@lsp.type.parameter"] = { fg = colors.orange },
-	vim.api.nvim_set_hl(0, "@lsp.type.property", { fg = colors.pink }) -- done
-	-- ["@lsp.type.struct"] = { fg = colors.cyan },
-	-- ["@lsp.type.type"] = { fg = colors.bright_cyan },
-	vim.api.nvim_set_hl(0, "@lsp.type.variable", { fg = colors.fg }) -- done
-	--
-	-- -- LSP
-	-- DiagnosticError = { fg = colors.red },
-	-- DiagnosticWarn = { fg = colors.yellow },
-	-- DiagnosticInfo = { fg = colors.cyan },
-	-- DiagnosticHint = { fg = colors.cyan },
-	-- DiagnosticUnderlineError = { undercurl = true, sp = colors.red },
-	-- DiagnosticUnderlineWarn = { undercurl = true, sp = colors.yellow },
-	-- DiagnosticUnderlineInfo = { undercurl = true, sp = colors.cyan },
-	-- DiagnosticUnderlineHint = { undercurl = true, sp = colors.cyan },
-	-- DiagnosticSignError = { fg = colors.red },
-	-- DiagnosticSignWarn = { fg = colors.yellow },
-	-- DiagnosticSignInfo = { fg = colors.cyan },
-	-- DiagnosticSignHint = { fg = colors.cyan },
-	-- DiagnosticFloatingError = { fg = colors.red },
-	-- DiagnosticFloatingWarn = { fg = colors.yellow },
-	-- DiagnosticFloatingInfo = { fg = colors.cyan },
-	-- DiagnosticFloatingHint = { fg = colors.cyan },
-	-- DiagnosticVirtualTextError = { fg = colors.red },
-	-- DiagnosticVirtualTextWarn = { fg = colors.yellow },
-	-- DiagnosticVirtualTextInfo = { fg = colors.cyan },
-	-- DiagnosticVirtualTextHint = { fg = colors.cyan },
-	--
-	-- LspDiagnosticsDefaultError = { fg = colors.red },
-	-- LspDiagnosticsDefaultWarning = { fg = colors.yellow },
-	-- LspDiagnosticsDefaultInformation = { fg = colors.cyan },
-	-- LspDiagnosticsDefaultHint = { fg = colors.cyan },
-	-- LspDiagnosticsUnderlineError = { fg = colors.red, undercurl = true },
-	-- LspDiagnosticsUnderlineWarning = { fg = colors.yellow, undercurl = true },
-	-- LspDiagnosticsUnderlineInformation = { fg = colors.cyan, undercurl = true },
-	-- LspDiagnosticsUnderlineHint = { fg = colors.cyan, undercurl = true },
-	-- LspReferenceText = { fg = colors.orange },
-	-- LspReferenceRead = { fg = colors.orange },
-	-- LspReferenceWrite = { fg = colors.orange },
-	-- LspCodeLens = { fg = colors.cyan },
-	-- LspInlayHint = { fg = "#969696", bg = "#2f3146" },
-	--
-	-- --LSP Saga
-	-- LspFloatWinNormal = { fg = colors.fg },
-	-- LspFloatWinBorder = { fg = colors.comment },
-	-- LspSagaHoverBorder = { fg = colors.comment },
-	-- LspSagaSignatureHelpBorder = { fg = colors.comment },
-	-- LspSagaCodeActionBorder = { fg = colors.comment },
-	-- LspSagaDefPreviewBorder = { fg = colors.comment },
-	-- LspLinesDiagBorder = { fg = colors.comment },
-	-- LspSagaRenameBorder = { fg = colors.comment },
-	-- LspSagaBorderTitle = { fg = colors.menu },
-	-- LSPSagaDiagnosticTruncateLine = { fg = colors.comment },
-	-- LspSagaDiagnosticBorder = { fg = colors.comment },
-	-- LspSagaShTruncateLine = { fg = colors.comment },
-	-- LspSagaDocTruncateLine = { fg = colors.comment },
-	-- LspSagaLspFinderBorder = { fg = colors.comment },
-	-- CodeActionNumber = { bg = "NONE", fg = colors.cyan },
-	--
-	-- -- Cmp
-	-- CmpItemAbbr = { fg = colors.white, bg = colors.bg },
-	-- CmpItemKind = { fg = colors.white, bg = colors.bg },
-	-- CmpItemKindMethod = { link = "@function.method" },
-	-- CmpItemKindText = { link = "@markup" },
-	-- CmpItemKindFunction = { link = "@function" },
-	-- CmpItemKindConstructor = { link = "@type" },
-	-- CmpItemKindVariable = { link = "@variable" },
-	-- CmpItemKindClass = { link = "@type" },
-	-- CmpItemKindInterface = { link = "@type" },
-	-- CmpItemKindModule = { link = "@module" },
-	-- CmpItemKindProperty = { link = "@property" },
-	-- CmpItemKindOperator = { link = "@operator" },
-	-- CmpItemKindReference = { link = "@variable.parameter.reference" },
-	-- CmpItemKindUnit = { link = "@variable.member" },
-	-- CmpItemKindValue = { link = "@variable.member" },
-	-- CmpItemKindField = { link = "@variable.member" },
-	-- CmpItemKindEnum = { link = "@variable.member" },
-	-- CmpItemKindKeyword = { link = "@keyword" },
-	-- CmpItemKindSnippet = { link = "@markup" },
-	-- CmpItemKindColor = { link = "DevIconCss" },
-	-- CmpItemKindFile = { link = "TSURI" },
-	-- CmpItemKindFolder = { link = "TSURI" },
-	-- CmpItemKindEvent = { link = "@constant" },
-	-- CmpItemKindEnumMember = { link = "@variable.member" },
-	-- CmpItemKindConstant = { link = "@constant" },
-	-- CmpItemKindStruct = { link = "@structure" },
-	-- CmpItemKindTypeParameter = { link = "@variable.parameter" },
+	-- Semantic
+	vim.api.nvim_set_hl(0, "@class", { fg = colors.fg })
+	vim.api.nvim_set_hl(0, "@struct", { fg = colors.orange })
+	vim.api.nvim_set_hl(0, "@enum", { fg = colors.orange })
+	vim.api.nvim_set_hl(0, "@enumMember", { fg = colors.pink })
+	vim.api.nvim_set_hl(0, "@decorator", { fg = colors.yellow })
+	vim.api.nvim_set_hl(0, "@interface", { fg = colors.fg })
+	vim.api.nvim_set_hl(0, "@event", { fg = colors.orange })
+	vim.api.nvim_set_hl(0, "@modifier", { fg = colors.orange })
+	vim.api.nvim_set_hl(0, "@regexp", { fg = colors.orange })
+	vim.api.nvim_set_hl(0, "@typeParameter", { fg = colors.orange })
+
+	-- LSP Semantic (0.9+)
+	vim.api.nvim_set_hl(0, "@lsp.type.class", { fg = colors.fg })
+	vim.api.nvim_set_hl(0, "@lsp.type.struct", { fg = colors.orange })
+	vim.api.nvim_set_hl(0, "@lsp.type.enum", { fg = colors.orange })
+	vim.api.nvim_set_hl(0, "@lsp.type.enumMember", { fg = colors.pink })
+	vim.api.nvim_set_hl(0, "@lsp.type.decorator", { fg = colors.yellow })
+	vim.api.nvim_set_hl(0, "@lsp.type.interface", { fg = colors.fg })
+	vim.api.nvim_set_hl(0, "@lsp.type.function", { fg = colors.yellow })
+	vim.api.nvim_set_hl(0, "@lsp.type.macro", { link = "Macro" })
+	vim.api.nvim_set_hl(0, "@lsp.type.type", { fg = colors.fg })
+	vim.api.nvim_set_hl(0, "@lsp.type.method", { fg = colors.blue })
+	vim.api.nvim_set_hl(0, "@lsp.type.namespace", { fg = colors.blue })
+	vim.api.nvim_set_hl(0, "@lsp.type.parameter", { fg = colors.blue })
+	vim.api.nvim_set_hl(0, "@lsp.type.property", { fg = colors.pink })
+	vim.api.nvim_set_hl(0, "@lsp.type.variable", { fg = colors.fg })
+
+	-- LSP
+	vim.api.nvim_set_hl(0, "DiagnosticError", { fg = colors.red })
+	vim.api.nvim_set_hl(0, "DiagnosticWarn", { fg = colors.yellow })
+	vim.api.nvim_set_hl(0, "DiagnosticInfo", { fg = colors.cyan })
+	vim.api.nvim_set_hl(0, "DiagnosticHint", { fg = colors.cyan })
+	vim.api.nvim_set_hl(0, "DiagnosticUnderlineError", { undercurl = true, sp = colors.red })
+	vim.api.nvim_set_hl(0, "DiagnosticUnderlineWarn", { undercurl = true, sp = colors.yellow })
+	vim.api.nvim_set_hl(0, "DiagnosticUnderlineInfo", { undercurl = true, sp = colors.cyan })
+	vim.api.nvim_set_hl(0, "DiagnosticUnderlineHint", { undercurl = true, sp = colors.cyan })
+	vim.api.nvim_set_hl(0, "DiagnosticSignError", { fg = colors.red })
+	vim.api.nvim_set_hl(0, "DiagnosticSignWarn", { fg = colors.yellow })
+	vim.api.nvim_set_hl(0, "DiagnosticSignInfo", { fg = colors.cyan })
+	vim.api.nvim_set_hl(0, "DiagnosticSignHint", { fg = colors.cyan })
+	vim.api.nvim_set_hl(0, "DiagnosticFloatingError", { fg = colors.red })
+	vim.api.nvim_set_hl(0, "DiagnosticFloatingWarn", { fg = colors.yellow })
+	vim.api.nvim_set_hl(0, "DiagnosticFloatingInfo", { fg = colors.cyan })
+	vim.api.nvim_set_hl(0, "DiagnosticFloatingHint", { fg = colors.cyan })
+	vim.api.nvim_set_hl(0, "DiagnosticVirtualTextError", { fg = colors.red })
+	vim.api.nvim_set_hl(0, "DiagnosticVirtualTextWarn", { fg = colors.yellow })
+	vim.api.nvim_set_hl(0, "DiagnosticVirtualTextInfo", { fg = colors.cyan })
+	vim.api.nvim_set_hl(0, "DiagnosticVirtualTextHint", { fg = colors.cyan })
+
+	vim.api.nvim_set_hl(0, "LspDiagnosticsDefaultError", { fg = colors.red })
+	vim.api.nvim_set_hl(0, "LspDiagnosticsDefaultWarning", { fg = colors.yellow })
+	vim.api.nvim_set_hl(0, "LspDiagnosticsDefaultInformation", { fg = colors.cyan })
+	vim.api.nvim_set_hl(0, "LspDiagnosticsDefaultHint", { fg = colors.cyan })
+	vim.api.nvim_set_hl(0, "LspDiagnosticsUnderlineError", { fg = colors.red, undercurl = true })
+	vim.api.nvim_set_hl(0, "LspDiagnosticsUnderlineWarning", { fg = colors.yellow, undercurl = true })
+	vim.api.nvim_set_hl(0, "LspDiagnosticsUnderlineInformation", { fg = colors.cyan, undercurl = true })
+	vim.api.nvim_set_hl(0, "LspDiagnosticsUnderlineHint", { fg = colors.cyan, undercurl = true })
+	vim.api.nvim_set_hl(0, "LspReferenceText", { fg = colors.orange })
+	vim.api.nvim_set_hl(0, "LspReferenceRead", { fg = colors.orange })
+	vim.api.nvim_set_hl(0, "LspReferenceWrite", { fg = colors.orange })
+	vim.api.nvim_set_hl(0, "LspCodeLens", { fg = colors.cyan })
+	vim.api.nvim_set_hl(0, "LspInlayHint", { fg = "#969696", bg = "#2f3146" })
+
+	--LSP Saga
+	vim.api.nvim_set_hl(0, "LspFloatWinNormal", { fg = colors.fg })
+	vim.api.nvim_set_hl(0, "LspFloatWinBorder", { fg = colors.comment })
+	vim.api.nvim_set_hl(0, "LspSagaHoverBorder", { fg = colors.comment })
+	vim.api.nvim_set_hl(0, "LspSagaSignatureHelpBorder", { fg = colors.comment })
+	vim.api.nvim_set_hl(0, "LspSagaCodeActionBorder", { fg = colors.comment })
+	vim.api.nvim_set_hl(0, "LspSagaDefPreviewBorder", { fg = colors.comment })
+	vim.api.nvim_set_hl(0, "LspLinesDiagBorder", { fg = colors.comment })
+	vim.api.nvim_set_hl(0, "LspSagaRenameBorder", { fg = colors.comment })
+	vim.api.nvim_set_hl(0, "LspSagaBorderTitle", { fg = colors.menu })
+	vim.api.nvim_set_hl(0, "LSPSagaDiagnosticTruncateLine", { fg = colors.comment })
+	vim.api.nvim_set_hl(0, "LspSagaDiagnosticBorder", { fg = colors.comment })
+	vim.api.nvim_set_hl(0, "LspSagaShTruncateLine", { fg = colors.comment })
+	vim.api.nvim_set_hl(0, "LspSagaDocTruncateLine", { fg = colors.comment })
+	vim.api.nvim_set_hl(0, "LspSagaLspFinderBorder", { fg = colors.comment })
+	vim.api.nvim_set_hl(0, "CodeActionNumber", { bg = "NONE", fg = colors.cyan })
+
+	-- Cmp
+	vim.api.nvim_set_hl(0, "CmpItemAbbr", { fg = colors.white, bg = colors.bg })
+	vim.api.nvim_set_hl(0, "CmpItemKind", { fg = colors.white, bg = colors.bg })
+	vim.api.nvim_set_hl(0, "CmpItemKindMethod", { link = "@function.method" })
+	vim.api.nvim_set_hl(0, "CmpItemKindText", { link = "@markup" })
+	vim.api.nvim_set_hl(0, "CmpItemKindFunction", { link = "@function" })
+	vim.api.nvim_set_hl(0, "CmpItemKindConstructor", { link = "@type" })
+	vim.api.nvim_set_hl(0, "CmpItemKindVariable", { link = "@variable" })
+	vim.api.nvim_set_hl(0, "CmpItemKindClass", { link = "@type" })
+	vim.api.nvim_set_hl(0, "CmpItemKindInterface", { link = "@type" })
+	vim.api.nvim_set_hl(0, "CmpItemKindModule", { link = "@module" })
+	vim.api.nvim_set_hl(0, "CmpItemKindProperty", { link = "@property" })
+	vim.api.nvim_set_hl(0, "CmpItemKindOperator", { link = "@operator" })
+	vim.api.nvim_set_hl(0, "CmpItemKindReference", { link = "@variable.parameter.reference" })
+	vim.api.nvim_set_hl(0, "CmpItemKindUnit", { link = "@variable.member" })
+	vim.api.nvim_set_hl(0, "CmpItemKindValue", { link = "@variable.member" })
+	vim.api.nvim_set_hl(0, "CmpItemKindField", { link = "@variable.member" })
+	vim.api.nvim_set_hl(0, "CmpItemKindEnum", { link = "@variable.member" })
+	vim.api.nvim_set_hl(0, "CmpItemKindKeyword", { link = "@keyword" })
+	vim.api.nvim_set_hl(0, "CmpItemKindSnippet", { link = "@markup" })
+	vim.api.nvim_set_hl(0, "CmpItemKindColor", { link = "DevIconCss" })
+	-- vim.api.nvim_set_hl(0, "CmpItemKindFile", {})
+	-- vim.api.nvim_set_hl(0, "CmpItemKindFolder", {})
+	vim.api.nvim_set_hl(0, "CmpItemKindEvent", { link = "@constant" })
+	vim.api.nvim_set_hl(0, "CmpItemKindEnumMember", { link = "@variable.member" })
+	vim.api.nvim_set_hl(0, "CmpItemKindConstant", { link = "@constant" })
+	vim.api.nvim_set_hl(0, "CmpItemKindStruct", { link = "@structure" })
+	vim.api.nvim_set_hl(0, "CmpItemKindTypeParameter", { link = "@variable.parameter" })
 end
 
 return M
