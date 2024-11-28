@@ -9,7 +9,7 @@ return {
 	yellow = "#BBB529",
 	green = "#6AAB73",
 	purple = "#9876AA",
-  blue = "#56A8F5",
+	blue = "#56A8F5",
 	cyan = "#8BE9FD",
 	pink = "#C77DBB",
 	bright_red = "#FF6E6E",
@@ -26,5 +26,5 @@ return {
 	nontext = "#3B4048",
 
 	white = "#ABB2BF",
-	black = "#191A21",
+	black = "#000000",
 }
